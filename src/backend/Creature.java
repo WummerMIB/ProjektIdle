@@ -39,6 +39,11 @@ public abstract class Creature {
 		return random;
 	}
 	
+	
+	public int getInititiv() {
+		return inititiv;
+	}
+
 	public String toString() {
 		return "Name: " + this.name + " Leben: " + this.hp + " Stamina: " + this.stamina + " Mana: " + this.mana + " Attacke: " + this.atk + " Defense: " + this.defence + " Spezial Attacke: " + this.spzAtk + " Spezial Defense: " + this.spzDef + " Initative: " + this.inititiv;
 	}

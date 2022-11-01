@@ -1,5 +1,6 @@
 package api;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 import backend.Hero;
@@ -27,6 +28,19 @@ public class Taverne {
 		}
 		
 		return list;
+	}
+
+	public int getIniParty() {
+		Collection<Hero> fullParty = party.getHeros();
+		int fast = 0;
+		int i = 0;
+		if(i < fullParty.size()) {
+			fast = party.getInitHero(i);
+			i++;
+		}else {
+			i = 0;
+		}
+		return fast;
 	}
 
 }
